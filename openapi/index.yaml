@@ -272,8 +272,10 @@ paths:
             $ref: "#/definitions/LimitedProfile"
           examples:
             application/json:
-              email: foobar@example.com
-              version: 1
+              sender_allowed: true
+              preferred_languages:
+                - en_US
+                - it_IT
         '401':
           description: Unauthorized
         '404':
